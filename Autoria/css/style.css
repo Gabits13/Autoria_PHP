@@ -1,0 +1,145 @@
+body {
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+}
+
+.navbar {
+  background-color: #3E4DFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+  /* Esconder elementos por padrão */
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  /* Tornar elementos visíveis quando estiverem na viewport */
+  .fade-in-section.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: 80px;
+  
+}
+.navbar-toggler, .back-button-navbar {
+  color: white;
+  border: none;
+  font-size: 30px; /*tamanho*/
+  cursor: pointer;
+  background-color: #3E4DFA;
+}
+
+#logo-texto {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navbar-toggler {
+  color: white;
+  border: none;
+  font-size: 30px; /*tamanho*/
+}
+
+.bell-icon {
+  color: white;
+  font-size: 30px; /*tamanho*/
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background: linear-gradient(to bottom left, #3E4DFA, #3E4DFA);
+  transition: right 0.7s ease-in-out;
+  padding-top: 20px;
+  z-index: 1050;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar .nav-link {
+  color: black;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.sidebar .nav-item .active {
+  color: white;
+  font-weight: bolder;
+}
+
+.back-button {
+  display: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+
+.back-button.active {
+  display: block;
+  
+}
+
+
+.custom-bg {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 0px;
+  max-width: 100%;
+}
+
+#p-hover:hover {
+  color: #F0A951 !important;
+}
+
+#carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+
+#logo-texto span {
+  transition: opacity 0.5s ease;
+}
+
+#logo-texto:hover span {
+  opacity: 0.6;
+}
+
+.nav-link {
+  color: white;
+}
+.color-especial{
+color: #cc00ff;
+font-weight: bolder;
+}
+
+/*DARKMODE*/
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
