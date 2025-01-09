@@ -13,6 +13,11 @@ Com esta aplicação, é possível:
 - Atualizar informações.
 - Remover registros de forma organizada e eficiente.
 
+Usuários para login:
+- Nome: UsuarioA / Senha: 123
+- Nome: UsuarioB / Senha: 456
+- Nome: Gabriel / Senha: 000
+
 A aplicação foi projetada para funcionar localmente, utilizando o XAMPP como servidor local e ambiente para o banco de dados.
 
 ## Tutorial para Configuração com XAMPP
